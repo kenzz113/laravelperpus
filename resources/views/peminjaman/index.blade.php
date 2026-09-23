@@ -6,8 +6,7 @@
 
         <a
             href="{{ route('peminjaman.create') }}"
-            class="btn btn-primary"
-        >
+            class="btn btn-primary" >
             + Catat Peminjaman
         </a>
     </div>
@@ -51,15 +50,13 @@
                                 <form
                                     action="{{ route('peminjaman.kembalikan', $item) }}"
                                     method="POST"
-                                    class="d-inline"
-                                >
+                                    class="d-inline" >
                                     @csrf
                                     @method('PATCH')
 
                                     <button
                                         type="submit"
-                                        class="btn btn-sm btn-success"
-                                    >
+                                        class="btn btn-sm btn-success"   >
                                         Kembalikan
                                     </button>
                                 </form>

@@ -38,33 +38,27 @@
 
                         <td>
                             <span
-                                class="badge bg-{{ $item->stok > 0 ? 'success' : 'danger' }}"
-                            >
+                                class="badge bg-{{ $item->stok > 0 ? 'success' : 'danger' }}">
                                 {{ $item->stok }}
                             </span>
                         </td>
 
                         <td>
-                            <a
-                                href="{{ route('buku.edit', $item) }}"
-                                class="btn btn-sm btn-warning"
-                            >
+                            <a href="{{ route('buku.edit', $item) }}"
+                                class="btn btn-sm btn-warning">
                                 Ubah
                             </a>
 
                             <form
                                 action="{{ route('buku.destroy', $item) }}"
                                 method="POST"
-                                class="d-inline"
-                            >
+                                class="d-inline">
                                 @csrf
                                 @method('DELETE')
 
-                                <button
-                                    type="submit"
+                                <button type="submit"
                                     class="btn btn-sm btn-danger"
-                                    onclick="return confirm('Hapus buku ini?')"
-                                >
+                                    onclick="return confirm('Hapus buku ini?')">
                                     Hapus
                                 </button>
                             </form>

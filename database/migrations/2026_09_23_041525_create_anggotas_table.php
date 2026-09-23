@@ -18,7 +18,6 @@ return new class extends Migration
             $table->text('alamat')->nullable();
             $table->string('no_hp')->nullable();
             $table->timestamps();
-
         });
     }
 

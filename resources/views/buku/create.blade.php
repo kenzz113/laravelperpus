@@ -38,8 +38,7 @@
                 id="penulis"
                 name="penulis"
                 class="form-control @error('penulis') is-invalid @enderror"
-                value="{{ old('penulis') }}"
-            >
+                value="{{ old('penulis') }}">
 
             @error('penulis')
                 <div class="invalid-feedback">
@@ -56,8 +55,7 @@
                 id="penerbit"
                 name="penerbit"
                 class="form-control @error('penerbit') is-invalid @enderror"
-                value="{{ old('penerbit') }}"
-            >
+                value="{{ old('penerbit') }}">
 
             @error('penerbit')
                 <div class="invalid-feedback">
@@ -74,8 +72,7 @@
                 id="tahun_terbit"
                 name="tahun_terbit"
                 class="form-control @error('tahun_terbit') is-invalid @enderror"
-                value="{{ old('tahun_terbit') }}"
-            >
+                value="{{ old('tahun_terbit') }}" >
 
             @error('tahun_terbit')
                 <div class="invalid-feedback">
@@ -92,8 +89,7 @@
                 id="isbn"
                 name="isbn"
                 class="form-control @error('isbn') is-invalid @enderror"
-                value="{{ old('isbn') }}"
-            >
+                value="{{ old('isbn') }}"   >
 
             @error('isbn')
                 <div class="invalid-feedback">
@@ -111,8 +107,7 @@
                 name="stok"
                 class="form-control @error('stok') is-invalid @enderror"
                 value="{{ old('stok', 1) }}"
-                min="0"
-            >
+                min="0"  >
 
             @error('stok')
                 <div class="invalid-feedback">

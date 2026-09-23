@@ -21,8 +21,7 @@
                 id="judul"
                 name="judul"
                 class="form-control @error('judul') is-invalid @enderror"
-                value="{{ old('judul', $buku->judul) }}"
-            >
+                value="{{ old('judul', $buku->judul) }}">
 
             @error('judul')
                 <div class="invalid-feedback">
@@ -39,8 +38,7 @@
                 id="penulis"
                 name="penulis"
                 class="form-control @error('penulis') is-invalid @enderror"
-                value="{{ old('penulis', $buku->penulis) }}"
-            >
+                value="{{ old('penulis', $buku->penulis) }}">
 
             @error('penulis')
                 <div class="invalid-feedback">
@@ -57,8 +55,7 @@
                 id="penerbit"
                 name="penerbit"
                 class="form-control @error('penerbit') is-invalid @enderror"
-                value="{{ old('penerbit', $buku->penerbit) }}"
-            >
+                value="{{ old('penerbit', $buku->penerbit) }}">
 
             @error('penerbit')
                 <div class="invalid-feedback">
@@ -75,8 +72,7 @@
                 id="tahun_terbit"
                 name="tahun_terbit"
                 class="form-control @error('tahun_terbit') is-invalid @enderror"
-                value="{{ old('tahun_terbit', $buku->tahun_terbit) }}"
-            >
+                value="{{ old('tahun_terbit', $buku->tahun_terbit) }}">
 
             @error('tahun_terbit')
                 <div class="invalid-feedback">
@@ -93,8 +89,7 @@
                 id="isbn"
                 name="isbn"
                 class="form-control @error('isbn') is-invalid @enderror"
-                value="{{ old('isbn', $buku->isbn) }}"
-            >
+                value="{{ old('isbn', $buku->isbn) }}">
 
             @error('isbn')
                 <div class="invalid-feedback">
@@ -112,8 +107,7 @@
                 name="stok"
                 class="form-control @error('stok') is-invalid @enderror"
                 value="{{ old('stok', $buku->stok) }}"
-                min="0"
-            >
+                min="0">
 
             @error('stok')
                 <div class="invalid-feedback">
